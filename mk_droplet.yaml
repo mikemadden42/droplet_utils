@@ -1,0 +1,6 @@
+---
+image: ubuntu-14-04-x64
+name: clu
+region: nyc3
+size: 512mb
+token: 1234567890
