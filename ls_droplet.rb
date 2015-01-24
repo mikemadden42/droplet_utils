@@ -16,4 +16,4 @@ printf("%20s: %50s\n", 'Name', droplet.name)
 printf("%20s: %50s\n", 'Status', droplet.status)
 printf("%20s: %50s\n", 'CPUs', droplet.vcpus)
 pubnet = droplet.networks.v4.find { |n| n.type == 'public' }
-printf("%20s: %50s\n", 'IP:', pubnet.ip_address)
+printf("%20s: %50s\n", 'IP', pubnet.ip_address)
