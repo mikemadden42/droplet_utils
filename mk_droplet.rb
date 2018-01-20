@@ -6,10 +6,11 @@ require 'yaml'
 options = YAML.load_file('mk_droplet.yaml')
 client = DropletKit::Client.new(access_token: options['token'])
 droplet = DropletKit::Droplet.new(
-        name: options['name'],
-        region: options['region'],
-        image: options['image'],
-        size: options['size'])
+  name: options['name'],
+  region: options['region'],
+  image: options['image'],
+  size: options['size']
+)
 created = client.droplets.create(droplet)
 
 printf("%20s: %50s\n", 'Disk space', created.disk)
